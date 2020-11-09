@@ -7,5 +7,20 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <div class="container ">
+      <table class="table">
+          <% for(var i=0; i < messages.length; i++) { %>
+             <tr>
+               <td><%= messages[i].text %></td>
+               <td><%= messages[i].user %></td>
+               <td><%= messages[i].added %></td>
+             </tr>
+          <% } %>
+          </table>
+       
+         <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE584jV5wbwMA/profile-displayphoto-shrink_100_100/0?e=1610582400&v=beta&t=6-85A-mcyE0T7uagTexHr6sRbf_MxxMXKTzpi_p2SSs" />
+        
+  </div>
   </body>
 </html>
